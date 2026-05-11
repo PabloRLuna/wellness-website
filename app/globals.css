@@ -11,49 +11,10 @@
   
   body {
     @apply bg-[#FAFAF9] text-[#1A1A1A] font-sans antialiased;
-    background-image: 
-      radial-gradient(circle at 25% 25%, rgba(139, 121, 102, 0.03) 0%, transparent 50%),
-      radial-gradient(circle at 75% 75%, rgba(107, 125, 111, 0.04) 0%, transparent 50%);
-    background-attachment: fixed;
   }
   
   html {
     scroll-behavior: smooth;
-  }
-  
-  /* Atmospheric overlay for depth */
-  body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: 
-      linear-gradient(180deg, transparent 0%, rgba(26, 26, 26, 0.02) 100%);
-    pointer-events: none;
-    z-index: 1;
-  }
-  
-  /* Subtle grain texture */
-  body::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: 
-      radial-gradient(circle at 1px 1px, rgba(26, 26, 26, 0.05) 1px, transparent 1px);
-    background-size: 20px 20px;
-    pointer-events: none;
-    z-index: 2;
-  }
-  
-  /* Ensure content is above overlays */
-  main, header, footer, section {
-    position: relative;
-    z-index: 10;
   }
 }
 
@@ -132,26 +93,18 @@
   /* Atmospheric sections */
   .section-light {
     @apply bg-[#FAFAF9];
-    background-image: 
-      linear-gradient(135deg, rgba(245, 243, 240, 0.5) 0%, rgba(232, 230, 227, 0.3) 100%);
   }
   
   .section-warm {
     @apply bg-[#F5F3F0];
-    background-image: 
-      linear-gradient(135deg, rgba(245, 243, 240, 0.8) 0%, rgba(232, 230, 227, 0.6) 100%);
   }
   
   .section-dark {
     @apply bg-[#1A1A1A] text-[#FAFAF9];
-    background-image: 
-      linear-gradient(180deg, #1A1A1A 0%, #2A2522 100%);
   }
   
   .section-sage {
     @apply bg-[#A8B5AD]/10;
-    background-image: 
-      linear-gradient(135deg, rgba(168, 181, 173, 0.1) 0%, rgba(122, 139, 130, 0.05) 100%);
   }
   
   /* Navigation styles */
