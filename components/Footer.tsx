@@ -40,7 +40,7 @@ export function Footer() {
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <motion.div variants={itemVariants}>
               <h3 className="heading-serif-small text-warm-brown mb-4">
-                El Arte de Escuchar
+                Oxymoron
               </h3>
               <p className="text-sm text-gray-400 leading-relaxed">
                 Acompañamiento humano para el crecimiento personal y el bienestar emocional a través de la escucha profunda.

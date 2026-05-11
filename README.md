@@ -1,6 +1,6 @@
-# El Arte de Escuchar - Sitio Web de Bienestar Emocional
+# Oxymoron - Sitio Web de Bienestar Emocional
 
-Una página web moderna, elegante y minimalista para acompañamiento humano y bienestar emocional, inspirada en la experiencia visual de "El Arte de Escuchar".
+Una página web moderna, elegante y minimalista para acompañamiento humano y bienestar emocional.
 
 ## 🌐 Vista Previa
 

@@ -22,7 +22,7 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <h1 className="heading-serif-small text-warm-brown">
-              El Arte de Escuchar
+              Oxymoron
             </h1>
           </div>
 

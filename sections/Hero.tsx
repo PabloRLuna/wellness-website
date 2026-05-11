@@ -46,9 +46,7 @@ export function Hero() {
           variants={itemVariants}
           className="heading-serif text-4xl md:text-6xl lg:text-7xl text-charcoal mb-6 text-balance"
         >
-          El Arte de
-          <br />
-          <span className="text-warm-brown">Escuchar</span>
+          <span className="text-warm-brown">Oxymoron</span>
         </motion.h1>
 
         <motion.p
