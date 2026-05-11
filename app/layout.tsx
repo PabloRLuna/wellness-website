@@ -5,18 +5,18 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Oxymoron - Bienestar Emocional',
-  description: 'Acompañamiento humano para el crecimiento personal y el bienestar emocional a través de la escucha activa',
+  title: 'Oxymoron - Neurocriminología y Empatía',
+  description: 'Plataforma contemporánea de investigación y divulgación sobre neurocriminología, compasión aplicada y reinserción humana a través de la escucha profunda',
   openGraph: {
-    title: 'Oxymoron - Bienestar Emocional',
-    description: 'Acompañamiento humano para el crecimiento personal y el bienestar emocional',
+    title: 'Oxymoron - Neurocriminología y Empatía',
+    description: 'Investigación humana y transformación social a través de la empatía, compasión y mindfulness aplicado',
     type: 'website',
     locale: 'es_ES',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Oxymoron - Bienestar Emocional',
-    description: 'Acompañamiento humano para el crecimiento personal y el bienestar emocional',
+    title: 'Oxymoron - Neurocriminología y Empatía',
+    description: 'La empatía y la compasión como herramientas reales de transformación humana',
   },
 }
 

@@ -5,24 +5,24 @@ import { motion } from 'framer-motion'
 export function Philosophy() {
   const values = [
     {
-      title: 'Presencia',
-      description: 'Estar completamente aquí y ahora, disponible para escuchar sin distracciones ni juicios.',
-      color: 'bg-warm-beige'
+      title: 'Investigación Humana',
+      description: 'Estudio profundo del comportamiento humano y la transformación conductual a través de métodos científicos y empáticos.',
+      color: 'bg-[#4A5D43]/20'
     },
     {
-      title: 'Autenticidad',
-      description: 'Mostrarme tal como soy, creando un espacio donde la vulnerabilidad sea bienvenida.',
-      color: 'bg-soft-gray'
+      title: 'Empatía Aplicada',
+      description: 'Desarrollo de la capacidad empática como herramienta real de intervención social y reinserción humana.',
+      color: 'bg-[#5A6B5F]/20'
     },
     {
-      title: 'Respeto',
-      description: 'Honrar cada experiencia y cada ritmo, reconociendo la sabiduría única de cada persona.',
-      color: 'bg-sage-green/20'
+      title: 'Compasión Activa',
+      description: 'La compasión como metodología transformadora en contextos de vulnerabilidad y exclusión social.',
+      color: 'bg-[#7A8B82]/20'
     },
     {
-      title: 'Confianza',
-      description: 'Construir un vínculo seguro donde el alma pueda expresarse sin miedo ni reservas.',
-      color: 'bg-light-terracotta/20'
+      title: 'Conciencia Social',
+      description: 'Integración del mindfulness y la meditación como herramientas de cambio conductual y reintegración.',
+      color: 'bg-[#8B7966]/20'
     }
   ]
 
@@ -64,7 +64,7 @@ export function Philosophy() {
             className="text-center mb-16"
           >
             <h2 className="heading-serif mb-6">
-              Mi <span className="text-deep-olive">Filosofía</span>
+              Nuestra <span className="text-[#4A5D43]">Metodología</span>
             </h2>
             <p className="body-text max-w-3xl mx-auto">
               Estos son los pilares que fundamentan mi práctica de acompañamiento, los valores que guían cada encuentro y cada conversación.
@@ -79,7 +79,7 @@ export function Philosophy() {
                 className="text-center"
               >
                 <div className={`${value.color} p-8 h-full transition-all duration-500 hover:shadow-lg`}>
-                  <h3 className="heading-serif-small text-deep-olive mb-4">
+                  <h3 className="heading-serif-small text-[#4A5D43] mb-4">
                     {value.title}
                   </h3>
                   <p className="body-text text-sm leading-relaxed">
@@ -92,10 +92,10 @@ export function Philosophy() {
 
           <motion.div
             variants={itemVariants}
-            className="bg-warm-beige/30 p-12 text-center"
+            className="bg-[#F5F3F0]/30 p-12 text-center"
           >
-            <h3 className="heading-serif-small text-charcoal mb-6">
-              El Proceso de Acompañamiento
+            <h3 className="heading-serif-small text-[#1A1A1A] mb-6">
+              El Proceso de Transformación
             </h3>
             <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               <div className="space-y-4">

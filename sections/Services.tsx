@@ -1,35 +1,35 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Card, CardContent, CardTitle, CardDescription } from '@/components/ui/Card'
-import { Button } from '@/components/ui/Button'
+import { Card, CardContent, CardTitle, CardDescription } from '../components/ui/Card'
+import { Button } from '../components/ui/Button'
 import { Heart, Users, BookOpen, MessageCircle } from 'lucide-react'
 
 export function Services() {
   const services = [
     {
       icon: Heart,
-      title: 'Sesiones Individuales',
-      description: 'Acompañamiento personalizado en un espacio seguro para explorar tus emociones y encontrar claridad en tu camino.',
-      features: ['Escucha profunda', 'Diálogo consciente', 'Espacio seguro', 'Confidencialidad absoluta']
+      title: 'Investigación Neurocriminológica',
+      description: 'Estudios académicos y aplicados sobre el comportamiento humano, la empatía y la transformación conductual en contextos complejos.',
+      features: ['Análisis profundo', 'Metodología científica', 'Aplicación práctica', 'Resultados medibles']
     },
     {
       icon: Users,
-      title: 'Talleres Grupales',
-      description: 'Experiencias compartidas donde aprenderemos juntos el arte de escuchar y comunicarnos de manera más auténtica.',
-      features: ['Pequeños grupos', 'Experiencia práctica', 'Ambiente seguro', 'Conexión comunitaria']
+      title: 'Programas de Reinserción',
+      description: 'Desarrollo de proyectos de empatía y compasión aplicados en centros penitenciarios para facilitar la transformación humana.',
+      features: ['Diseño personalizado', 'Acompañamiento continuo', 'Evaluación de impacto', 'Seguimiento longitudinal']
     },
     {
       icon: BookOpen,
-      title: 'Mentoría Personal',
-      description: 'Un proceso continuo de crecimiento y desarrollo personal con acompañamiento constante y herramientas prácticas.',
-      features: ['Proceso continuo', 'Herramientas prácticas', 'Seguimiento personal', 'Objetivos claros']
+      title: 'Mindfulness Aplicado',
+      description: 'Técnicas de meditación y conciencia plena adaptadas a contextos de vulnerabilidad y transformación social.',
+      features: ['Protocolos validados', 'Adaptación contextual', 'Práctica guiada', 'Integración institucional']
     },
     {
       icon: MessageCircle,
-      title: 'Escucha Activa',
-      description: 'Aprende a escuchar profundamente a los demás y a ti mismo, transformando tus relaciones y tu vida.',
-      features: ['Técnicas avanzadas', 'Práctica guiada', 'Aplicación real', 'Feedback personalizado']
+      title: 'Formación en Empatía',
+      description: 'Programas educativos para desarrollar la capacidad empática como herramienta profesional de intervención humana.',
+      features: ['Métodos probados', 'Evaluación competencial', 'Certificación profesional', 'Aplicación real']
     }
   ]
 

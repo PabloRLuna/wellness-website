@@ -23,33 +23,33 @@ export function Hero() {
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#FAFAF9] mb-8 leading-tight tracking-tight">
               <span className="block">Oxymoron</span>
               <span className="block text-3xl md:text-4xl lg:text-5xl text-[#A8B5AD] mt-4 font-light">
-                Donde la contradicción se transforma en sabiduría
+                La empatía como herramienta de transformación humana
               </span>
             </h1>
 
-            {/* Subtitle with emotional depth */}
+            {/* Subtitle with intellectual depth */}
             <p className="text-lg md:text-xl lg:text-2xl text-[#9B9590] max-w-3xl mx-auto leading-relaxed font-light">
-              Un espacio contemplativo para explorar la belleza de las contradicciones humanas, 
-              encontrar calma en el caos y descubrir la profunda sabiduría que habita en nuestros silencios.
+              Una plataforma contemporánea de investigación y divulgación sobre neurocriminología, 
+              compasión aplicada y reinserción humana a través de la escucha profunda y el mindfulness.
             </p>
           </div>
 
           {/* Emotional tagline */}
           <div className="space-y-2">
             <p className="text-sm text-[#A8B5AD]/80 italic font-light tracking-wide">
-              "En la tensión entre luz y oscuridad, 
+              "Comprender también es transformar.
               <br />
-              encontramos nuestra verdadera naturaleza"
+              La empatía como herramienta de reinserción."
             </p>
           </div>
 
           {/* Call-to-action buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-16">
             <button className="bg-[#4A5D43] text-[#FAFAF9] px-10 py-4 rounded-none font-medium transition-all duration-700 hover:bg-[#1A1A1A] hover:shadow-lg hover:-translate-y-px border-0">
-              Comienza tu viaje interior
+              Explora la investigación
             </button>
             <button className="border border-[#D4D0CC] text-[#FAFAF9] px-10 py-4 rounded-none font-medium transition-all duration-700 hover:border-[#FAFAF9] hover:bg-[#FAFAF9] hover:text-[#1A1A1A]">
-              Explora el espacio
+              Conoce los proyectos
             </button>
           </div>
         </div>
