@@ -138,4 +138,4 @@ Este proyecto es para fines demostrativos. Siéntete libre de usarlo como base p
 
 ---
 
-**URL del Sitio**: `https://TU_USERNAME.github.io/wellness-website/`
+**URL del Sitio**: `https://PabloRLuna.github.io/wellness-website/`
