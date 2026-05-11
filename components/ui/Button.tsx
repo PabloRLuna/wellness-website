@@ -1,33 +1,36 @@
-import { ButtonHTMLAttributes, ReactNode } from 'react'
+import React from 'react'
+import { ButtonHTMLAttributes } from 'react'
 import { cn } from '@/lib/utils'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary'
+  variant?: 'primary' | 'secondary' | 'outline'
   size?: 'sm' | 'md' | 'lg'
-  children: ReactNode
+  children: React.ReactNode
   className?: string
 }
 
 export function Button({ variant = 'primary', size = 'md', className, children, ...props }: ButtonProps) {
-  const baseClasses = 'rounded-none font-medium tracking-wide transition-all duration-300'
+  const baseClasses = 'rounded-none font-medium tracking-wide transition-all duration-700'
   
-  const variants = {
-    primary: 'bg-warm-brown text-white hover:bg-opacity-90 hover:shadow-lg',
-    secondary: 'border-2 border-charcoal text-charcoal hover:bg-charcoal hover:text-white'
-  }
-  
-  const sizes = {
-    sm: 'px-6 py-2 text-sm',
-    md: 'px-8 py-3',
-    lg: 'px-10 py-4 text-lg'
+  const buttonVariants = {
+    variant: {
+      primary: 'btn-primary',
+      secondary: 'btn-secondary',
+      outline: 'btn-outline',
+    },
+    size: {
+      sm: 'px-8 py-3 text-sm',
+      md: 'px-10 py-4',
+      lg: 'px-14 py-5 text-lg',
+    },
   }
   
   return (
     <button
       className={cn(
         baseClasses,
-        variants[variant],
-        sizes[size],
+        buttonVariants.variant[variant],
+        buttonVariants.size[size],
         className
       )}
       {...props}

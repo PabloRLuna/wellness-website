@@ -28,7 +28,7 @@ export function CTA() {
   }
 
   return (
-    <section id="contact" className="section-padding bg-warm-brown">
+    <section id="contact" className="section-padding section-dark">
       <div className="container-custom">
         <motion.div
           variants={containerVariants}

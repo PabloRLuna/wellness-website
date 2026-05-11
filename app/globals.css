@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,62 +6,180 @@
 
 @layer base {
   * {
-    @apply border-gray-200;
+    @apply border-stone-gray;
   }
   
   body {
     @apply bg-off-white text-charcoal font-sans antialiased;
+    background-image: 
+      radial-gradient(circle at 25% 25%, rgba(139, 121, 102, 0.03) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(107, 125, 111, 0.04) 0%, transparent 50%);
+    background-attachment: fixed;
   }
   
   html {
     scroll-behavior: smooth;
   }
+  
+  /* Atmospheric overlay for depth */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      linear-gradient(180deg, transparent 0%, rgba(26, 26, 26, 0.02) 100%);
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  /* Subtle grain texture */
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      radial-gradient(circle at 1px 1px, rgba(26, 26, 26, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+    pointer-events: none;
+    z-index: 2;
+  }
+  
+  /* Ensure content is above overlays */
+  main, header, footer, section {
+    position: relative;
+    z-index: 10;
+  }
 }
 
 @layer components {
   .container-custom {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
-  }
-  
-  .text-balance {
-    text-wrap: balance;
-  }
-  
-  .btn-primary {
-    @apply bg-warm-brown text-white px-8 py-3 rounded-none font-medium tracking-wide transition-all duration-300 hover:bg-opacity-90 hover:shadow-lg;
-  }
-  
-  .btn-secondary {
-    @apply border-2 border-charcoal text-charcoal px-8 py-3 rounded-none font-medium tracking-wide transition-all duration-300 hover:bg-charcoal hover:text-white;
+    @apply max-w-container-custom mx-auto px-container-padding;
   }
   
   .section-padding {
-    @apply py-16 md:py-24;
+    @apply py-section-padding;
+  }
+  
+  .section-padding-sm {
+    @apply py-section-padding-sm;
   }
   
   .heading-serif {
-    @apply font-serif text-3xl md:text-4xl lg:text-5xl font-medium leading-tight;
+    @apply font-serif heading-serif-large;
   }
   
   .heading-serif-small {
-    @apply font-serif text-2xl md:text-3xl font-medium leading-tight;
+    @apply font-serif heading-serif-small;
+  }
+  
+  .heading-serif-medium {
+    @apply font-serif heading-serif-medium;
   }
   
   .body-text {
-    @apply text-base md:text-lg leading-relaxed text-gray-600;
+    @apply body-text;
   }
   
-  .card-hover {
-    @apply transition-all duration-500 hover:shadow-xl hover:-translate-y-1;
-  }
-}
-
-@layer utilities {
-  .text-shadow {
-    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  .body-text-small {
+    @apply body-text-small;
   }
   
-  .backdrop-blur-custom {
-    backdrop-filter: blur(10px);
+  .body-text-large {
+    @apply body-text-large;
+  }
+  
+  /* Atmospheric buttons */
+  .btn-primary {
+    @apply bg-deep-olive text-off-white px-10 py-4 rounded-none font-medium transition-all duration-700 hover:bg-charcoal hover:shadow-atmospheric-lg hover:-translate-y-px;
+  }
+  
+  .btn-secondary {
+    @apply border border-deep-olive text-deep-olive px-10 py-4 rounded-none font-medium transition-all duration-700 hover:bg-deep-olive hover:text-off-white hover:shadow-atmospheric;
+  }
+  
+  .btn-outline {
+    @apply border border-stone-gray text-charcoal px-10 py-4 rounded-none font-medium transition-all duration-700 hover:border-charcoal hover:bg-charcoal hover:text-off-white;
+  }
+  
+  /* Sophisticated cards */
+  .card-atmospheric {
+    @apply bg-off-white/80 backdrop-blur-custom border border-stone-gray/30 shadow-atmospheric transition-all duration-700 hover:shadow-atmospheric-lg hover:-translate-y-1;
+  }
+  
+  .card-dark {
+    @apply bg-warm-charcoal/90 backdrop-blur-custom border border-deep-stone/30 shadow-atmospheric transition-all duration-700 hover:shadow-atmospheric-lg hover:-translate-y-1;
+  }
+  
+  .card-sage {
+    @apply bg-sage-mist/20 backdrop-blur-custom border border-muted-sage/30 shadow-sage-glow transition-all duration-700 hover:shadow-atmospheric hover:-translate-y-1;
+  }
+  
+  /* Text content limits */
+  .text-content {
+    @apply max-w-text-content mx-auto;
+  }
+  
+  .text-content-lg {
+    @apply max-w-text-content-lg mx-auto;
+  }
+  
+  /* Atmospheric sections */
+  .section-light {
+    @apply bg-off-white;
+    background-image: 
+      linear-gradient(135deg, rgba(245, 243, 240, 0.5) 0%, rgba(232, 230, 227, 0.3) 100%);
+  }
+  
+  .section-warm {
+    @apply bg-warm-sand;
+    background-image: 
+      linear-gradient(135deg, rgba(245, 243, 240, 0.8) 0%, rgba(232, 230, 227, 0.6) 100%);
+  }
+  
+  .section-dark {
+    @apply bg-charcoal text-off-white;
+    background-image: 
+      linear-gradient(180deg, #1A1A1A 0%, #2A2522 100%);
+  }
+  
+  .section-sage {
+    @apply bg-sage-mist/10;
+    background-image: 
+      linear-gradient(135deg, rgba(168, 181, 173, 0.1) 0%, rgba(122, 139, 130, 0.05) 100%);
+  }
+  
+  /* Navigation styles */
+  .nav-atmospheric {
+    @apply bg-off-white/90 backdrop-blur-strong border-b border-stone-gray/20;
+  }
+  
+  /* Hero overlay */
+  .hero-overlay {
+    background-image: 
+      linear-gradient(180deg, rgba(26, 26, 26, 0.3) 0%, rgba(42, 37, 34, 0.5) 100%);
+  }
+  
+  .hero-overlay-dark {
+    background-image: 
+      linear-gradient(180deg, rgba(26, 26, 26, 0.6) 0%, rgba(42, 37, 34, 0.8) 100%);
+  }
+  
+  /* Sophisticated hover states */
+  .hover-lift {
+    @apply transition-all duration-700 hover:-translate-y-2 hover:shadow-atmospheric-lg;
+  }
+  
+  .hover-glow {
+    @apply transition-all duration-700 hover:shadow-soft-glow;
+  }
+  
+  .hover-sage {
+    @apply transition-all duration-700 hover:shadow-sage-glow;
   }
 }

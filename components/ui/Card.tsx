@@ -5,14 +5,24 @@ interface CardProps {
   children: ReactNode
   className?: string
   hover?: boolean
+  variant?: 'default' | 'elevated' | 'dark' | 'sage'
 }
 
-export function Card({ children, className, hover = false }: CardProps) {
+export const cardVariants = {
+  variant: {
+    default: 'card-atmospheric',
+    elevated: 'card-atmospheric shadow-atmospheric-lg',
+    dark: 'card-dark',
+    sage: 'card-sage',
+  },
+}
+
+export function Card({ children, className, hover = false, variant = 'default' }: CardProps) {
   return (
     <div
       className={cn(
-        'bg-white p-8 shadow-sm',
-        hover && 'card-hover',
+        cardVariants.variant[variant],
+        hover && 'hover-lift',
         className
       )}
     >

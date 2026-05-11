@@ -17,11 +17,11 @@ export function Navigation() {
   ]
 
   return (
-    <nav className="fixed top-0 w-full bg-off-white/90 backdrop-blur-custom z-50 border-b border-soft-gray">
+    <nav className="nav-atmospheric fixed top-0 w-full z-50">
       <div className="container-custom">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <h1 className="heading-serif-small text-warm-brown">
+            <h1 className="heading-serif-small text-deep-olive">
               Oxymoron
             </h1>
           </div>
@@ -32,7 +32,7 @@ export function Navigation() {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-charcoal hover:text-warm-brown transition-colors duration-300 text-sm font-medium"
+                className="text-charcoal hover:text-deep-olive transition-all duration-700 text-sm font-medium hover:-translate-y-px"
               >
                 {item.label}
               </a>
@@ -61,7 +61,7 @@ export function Navigation() {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="text-charcoal hover:text-warm-brown transition-colors duration-300 text-sm font-medium"
+                  className="text-charcoal hover:text-deep-olive transition-all duration-700 text-sm font-medium hover:-translate-y-px"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}

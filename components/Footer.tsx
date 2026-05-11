@@ -28,7 +28,7 @@ export function Footer() {
   }
 
   return (
-    <footer className="bg-charcoal text-off-white section-padding">
+    <footer className="section-dark text-off-white">
       <div className="container-custom">
         <motion.div
           variants={containerVariants}
@@ -39,7 +39,7 @@ export function Footer() {
         >
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <motion.div variants={itemVariants}>
-              <h3 className="heading-serif-small text-warm-brown mb-4">
+              <h3 className="heading-serif-small text-sage-mist mb-4">
                 Oxymoron
               </h3>
               <p className="text-sm text-gray-400 leading-relaxed">

@@ -50,7 +50,7 @@ export function Philosophy() {
   }
 
   return (
-    <section id="philosophy" className="section-padding bg-white">
+    <section id="philosophy" className="section-padding section-warm">
       <div className="container-custom">
         <motion.div
           variants={containerVariants}
@@ -64,7 +64,7 @@ export function Philosophy() {
             className="text-center mb-16"
           >
             <h2 className="heading-serif mb-6">
-              Mi <span className="text-warm-brown">Filosofía</span>
+              Mi <span className="text-deep-olive">Filosofía</span>
             </h2>
             <p className="body-text max-w-3xl mx-auto">
               Estos son los pilares que fundamentan mi práctica de acompañamiento, los valores que guían cada encuentro y cada conversación.
@@ -79,7 +79,7 @@ export function Philosophy() {
                 className="text-center"
               >
                 <div className={`${value.color} p-8 h-full transition-all duration-500 hover:shadow-lg`}>
-                  <h3 className="heading-serif-small text-charcoal mb-4">
+                  <h3 className="heading-serif-small text-deep-olive mb-4">
                     {value.title}
                   </h3>
                   <p className="body-text text-sm leading-relaxed">

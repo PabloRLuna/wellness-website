@@ -57,7 +57,7 @@ export function Services() {
   }
 
   return (
-    <section id="services" className="section-padding bg-off-white">
+    <section id="services" className="section-padding section-sage">
       <div className="container-custom">
         <motion.div
           variants={containerVariants}
@@ -85,12 +85,12 @@ export function Services() {
                 variants={itemVariants}
                 className="h-full"
               >
-                <Card hover className="h-full">
+                <Card hover className="h-full" variant="sage">
                   <CardContent className="p-8 h-full flex flex-col">
                     <div className="mb-6">
                       <service.icon 
                         size={32} 
-                        className="text-warm-brown mb-4"
+                        className="text-deep-olive mb-4"
                       />
                       <CardTitle>
                         {service.title}
@@ -124,7 +124,7 @@ export function Services() {
             variants={itemVariants}
             className="text-center"
           >
-            <div className="inline-block p-8 bg-white rounded-none shadow-sm">
+            <div className="inline-block p-8 card-atmospheric">
               <h3 className="heading-serif-small text-charcoal mb-4">
                 ¿No estás seguro por dónde empezar?
               </h3>
